@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+::-webkit-scrollbar:hover {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(#222, #666);
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	background-color: rgb(194, 194, 194);
+	width: 100%;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.navbar img {
+	height: 200px;
+	width: 420px;
+	cursor: pointer;
+}
+
+.right {
+	margin-right: 60px;
+	display: flex;
+	gap: 50px;
+	align-items: center;
+}
+
+.navbar .logout {
+	width: 40px;
+	height: 40px;
+}
+
+.navbar .profile_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 15px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.navbar .profile_content p {
+	position: absolute;
+	bottom: -10px;
+	font-weight: 700;
+	color: #02516b;
+}
+
+.navbar .profile {
+	width: 80px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+	.navbar img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.navbar .profile {
+		width: 50px;
+		height: 30px;
+	}
+
+	.navbar .logout {
+		width: 24px;
+		height: 24px;
+	}
+
+	.navbar .profile_content p {
+		font-size: 12px;
+		bottom: 0;
+	}
+
+	.right {
+		gap: 20px;
+	}
+}

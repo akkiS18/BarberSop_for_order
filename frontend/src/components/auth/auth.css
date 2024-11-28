@@ -1,0 +1,100 @@
+.container_auth {
+	background: linear-gradient(#02516b, #000);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 25px;
+}
+
+.form_container_register {
+	margin-top: 110px;
+	width: 300px;
+	background: linear-gradient(180deg, #111 15%, #fff 10%);
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 15px;
+}
+
+.form_container_login {
+	margin-top: 110px;
+	width: 300px;
+	background: linear-gradient(180deg, #111 25%, #fff 20%);
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 15px;
+}
+
+.form_auth {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.form_container_login p,
+.form_container_register p {
+	font-size: 30px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.form_container_login label,
+.form_container_register label {
+	color: rgb(40, 42, 44);
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+.form_container_login .input,
+.form_container_register .input {
+	padding: 10px;
+	height: 30px;
+	border: none;
+	background-color: rgb(224, 231, 236);
+	border-radius: 5px;
+}
+
+.form_container_login .input:focus,
+.form_container_register .input:focus {
+	outline: none;
+}
+
+.form_container_login button,
+.form_container_register button {
+	border: none;
+	height: 35px;
+	margin-top: 30px;
+	background-color: #111;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.form_container_login button:hover,
+.form_container_register button:hover {
+	background-color: #333;
+}
+
+.form_container_login a,
+.form_container_register a {
+	align-self: center;
+	margin: 20px 0;
+	font-size: 15px;
+    text-decoration: none;
+    color: #02516b;
+}
+
+a:focus {
+    color: #1cb3e6;
+}
